@@ -1,0 +1,126 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    text-decoration:none;
+    font-family:'poppins', sans-serif;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+
+}
+.login{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:400px;
+    height: 400px;
+    background-color: transparent;
+    border:5px solid #333;
+    border-radius:10px;
+    transition: .5s;
+}
+h2{
+    font-size: 2em;
+    text-align: center;
+    color:#fff;
+    transition:.5s;
+}
+.box{
+    position:relative;
+    width:320px;
+    margin:30px
+}
+.box input{
+    width:100%;
+    height:50px;
+    background:transparent;
+    border:2px solid #333;
+    outline:none;
+    border-radius:5px;
+    font-size:1em;
+    color:#fff;
+    padding-left:30px;
+    transition:.5s;
+}
+.box input::placeholder{
+    color:rgba(255,255,255,0.3);
+}
+ .box .icon{
+ position:absolute;
+ left:10px;
+ color:#ffff;
+ font-size:1.2em;
+ line-height:55px;
+ transition:.5s;
+}
+.forget{
+    margin:-15px 0px 15px;
+    padding-right:210px
+}
+.forget a{
+    color:#ffff;
+    font-size:.9em;
+}
+.forget a:hover{
+ text-decoration:underline;
+}
+button{
+    position:relative;
+    width:80%;
+    height:45px;
+    background-color:#333;
+    border:none;
+    outline:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:1em;
+    color:#ffff;
+    font-weight:500;
+    transition:0.5s;
+}
+.notaccount{
+    font-size:.9em;
+    margin:25px;
+}
+.notaccount p{
+    color:#ffff;
+}
+.notaccount p a{
+    color:#333;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.5s;
+}
+.notaccount p a:hover{
+text-decoration:underline;
+}
+.login:hover{
+    border:5px solid#B13BFF;
+    box-shadow:0 0 20px #B13BFF,inset 0 0 20px #B13BFF;
+}
+.login:hover h2{
+    color:#FFCC00;
+}
+.login:hover .box input{
+ border:5px solid #FFCC00;
+ box-shadow: 0 0 10px #FFCC00,inset 0 0 10px #FFCC00;
+}
+.login:hover .box .icon{
+    color:#B13BFF;
+}
+.login:hover button{
+    background-color:#FFCC00;
+    color:#000;
+    box-shadow:0 0 10px #FFCC00;
+}
+.login:hover .notaccount p a {
+    color:#B13BFF;
+}
+
